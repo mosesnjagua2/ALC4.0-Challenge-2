@@ -90,18 +90,18 @@ public class DealActivity extends AppCompatActivity {
         MenuItem saveMenu = menu.findItem(R.id.save_menu);
         MenuItem deleteMenu = menu.findItem(R.id.delete_menu);
         Button imageButton = findViewById(R.id.btnImage);
-//        if(FirebaseUtil.isAdmin){
-//            saveMenu.setVisible(true);
-//            deleteMenu.setVisible(true);
-//            enableEditTexts(true);
-//            imageButton.setEnabled(true);
-//        }
-//        else{
-//            saveMenu.setVisible(false);
-//            deleteMenu.setVisible(false);
-//            enableEditTexts(false);
-//            imageButton.setEnabled(false);
-//        }
+        if(!FirebaseUtil.isAdmin ){
+            saveMenu.setVisible(true);
+            deleteMenu.setVisible(true);
+            enableEditTexts(true);
+            imageButton.setEnabled(true);
+        }
+        else{
+            saveMenu.setVisible(false);
+            deleteMenu.setVisible(false);
+            enableEditTexts(false);
+            imageButton.setEnabled(false);
+        }
         return true;
     }
 
