@@ -3,4 +3,8 @@
     <color name="colorPrimary">#00e5ee</color>
     <color name="colorPrimaryDark">#00bfff</color>
     <color name="colorAccent">#ff8c00</color>
+
+    <color name="travel_gradient_1_start">#E00034</color>
+    <color name="travel_gradient_1_end">#7C109A</color>
+    <color name="tingg_gradient_2_start">#E00034</color>
 </resources>
